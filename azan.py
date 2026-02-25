@@ -10,7 +10,7 @@ import requests
 from datetime import datetime
 
 ZONE_ID = "WLY01"
-CACHE_DIR = os.path.expanduser("~/.alfred_prayer_cache")
+CACHE_DIR = os.path.expanduser("./")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 
@@ -145,7 +145,7 @@ def build_items():
         items.append({
             "title": title,
             "subtitle": subtitle,
-            "icon": {"path": "./mosque.png"}
+            "icon": {"path": "./icon.png"}
         })
 
     return items
